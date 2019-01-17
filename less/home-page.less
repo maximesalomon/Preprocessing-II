@@ -2,7 +2,7 @@
     width: 100%;
     border-bottom: 2px dashed silver;
   .navbar {
-    @media @mobile {
+    @media @mobile, @tablet {
       display: flex;
       flex-direction: column;
       margin: 0 auto;
@@ -13,14 +13,14 @@
     display: flex;
     justify-content: space-between;
     #logo {
-        @media @mobile {
+        @media @mobile, @tablet {
           margin: 0 auto;
         }
         font-size: 4rem;
         font-family: 'Indie Flower';
     }
     nav {
-      @media @mobile {
+      @media @mobile, @tablet {
         margin: 0 auto;
       }
     }
@@ -28,7 +28,7 @@
 }
 
 .home {
-  @media @mobile {
+  @media @mobile, @tablet {
     padding: 0 5%;
   }
 
@@ -42,7 +42,7 @@
   }
 
   .content-section {
-    @media @mobile {
+    @media @mobile, @tablet {
       display: flex;
       flex-direction: column;
     }
@@ -54,7 +54,7 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 100%;
         padding: 0;
         &:last-child {
@@ -66,9 +66,10 @@
     .img-content {
       width: 48%;
       padding-left: 1%;
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 100%;
         padding: 0;
+        margin: 0;
       }
 
       img {
@@ -93,7 +94,7 @@
   }
 
   .content-destination {
-    @media @mobile {
+    @media @mobile, @tablet {
       width: 100%;
     }
     width: 75%;
@@ -105,7 +106,7 @@
   }
 
   .content-pick {
-    @media @mobile {
+    @media @mobile, @tablet {
       display: flex;
       flex-direction: column;
     }
@@ -115,7 +116,7 @@
     justify-content: space-between;
 
     .destination {
-      @media @mobile {
+      @media @mobile, @tablet {
         width: 80%;
         margin: 0 0 30px 30px;
       }
