@@ -146,6 +146,11 @@ h5 {
 h1 {
   font-size: 4rem;
 }
+@media (max-width: 500px) {
+  h1 {
+    font-size: 3rem;
+  }
+}
 h2 {
   font-size: 3.2rem;
   padding-bottom: 10px;
@@ -202,9 +207,31 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .header .navbar {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+}
 .header .navbar #logo {
   font-size: 4rem;
   font-family: 'Indie Flower';
+}
+@media (max-width: 500px) {
+  .header .navbar #logo {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .header .navbar nav {
+    margin: 0 auto;
+  }
+}
+@media (max-width: 500px) {
+  .home {
+    padding: 0 5%;
+  }
 }
 .home .img-section {
   width: 100%;
@@ -220,13 +247,34 @@ nav a {
   flex-wrap: wrap;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-section {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-section .text-content {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width: 500px) {
+  .home .content-section .text-content {
+    width: 100%;
+    padding: 0;
+  }
+  .home .content-section .text-content:last-child {
+    margin-top: 20px;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width: 500px) {
+  .home .content-section .img-content {
+    width: 100%;
+    padding: 0;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -247,6 +295,11 @@ nav a {
   width: 75%;
   margin: 0 auto 30px;
 }
+@media (max-width: 500px) {
+  .home .content-destination {
+    width: 100%;
+  }
+}
 .home .content-destination img {
   border-radius: 10px;
 }
@@ -256,9 +309,21 @@ nav a {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .home .content-pick {
+    display: flex;
+    flex-direction: column;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination {
+    width: 80%;
+    margin: 0 0 30px 30px;
+  }
 }
 .home .content-pick .destination .btn {
   width: 200px;
@@ -269,4 +334,13 @@ nav a {
   font-size: 2rem;
   font-family: 'Roboto', cursive;
   border-radius: 16px;
+}
+@media (max-width: 500px) {
+  .home .content-pick .destination .btn {
+    width: 100%;
+    background-color: #39a5b8;
+    padding: 10px 0px;
+    font-size: 1.6rem;
+    border-radius: 10px;
+  }
 }

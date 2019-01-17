@@ -2,19 +2,35 @@
     width: 100%;
     border-bottom: 2px dashed silver;
   .navbar {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+      margin: 0 auto;
+    }
     max-width: 800px;
     width: 100%;
     margin: 20px auto;
     display: flex;
     justify-content: space-between;
     #logo {
+        @media @mobile {
+          margin: 0 auto;
+        }
         font-size: 4rem;
         font-family: 'Indie Flower';
+    }
+    nav {
+      @media @mobile {
+        margin: 0 auto;
+      }
     }
   }
 }
 
 .home {
+  @media @mobile {
+    padding: 0 5%;
+  }
 
   .img-section {
     width: 100%;
@@ -26,6 +42,10 @@
   }
 
   .content-section {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
     margin: 30px 0;
     display: flex;
     flex-wrap: wrap;
@@ -34,11 +54,22 @@
     .text-content {
       width: 48%;
       padding-right: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+        &:last-child {
+          margin-top: 20px;
+        }
+      }
     }
 
     .img-content {
       width: 48%;
       padding-left: 1%;
+      @media @mobile {
+        width: 100%;
+        padding: 0;
+      }
 
       img {
         border-radius: 10px;
@@ -62,6 +93,9 @@
   }
 
   .content-destination {
+    @media @mobile {
+      width: 100%;
+    }
     width: 75%;
     margin: 0 auto 30px;
 
@@ -71,12 +105,20 @@
   }
 
   .content-pick {
+    @media @mobile {
+      display: flex;
+      flex-direction: column;
+    }
     padding-top: 30px;
     border-top: 2px dashed @navigation-border;
     display: flex;
     justify-content: space-between;
 
     .destination {
+      @media @mobile {
+        width: 80%;
+        margin: 0 0 30px 30px;
+      }
       width: 30%;
       margin-bottom: 30px;
       .btn {
