@@ -168,6 +168,18 @@ img {
   width: 100%;
   margin: 0 auto;
 }
+nav {
+  display: flex;
+  justify-content: space-between;
+  width: 340px;
+  font-family: 'Roboto', cursive;
+  font-size: 1.6rem;
+  padding: 10px 20px 20px 20px;
+}
+nav a {
+  text-decoration: none;
+  color: black;
+}
 .footer {
   width: 100%;
   border-top: 2px dashed silver;
@@ -178,6 +190,29 @@ img {
   color: #212529;
   font-size: 1.6rem;
   padding: 20px;
+}
+.header {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+}
+.header .navbar {
+  max-width: 800px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  justify-content: space-between;
+}
+.header .navbar #logo {
+  font-size: 4rem;
+  font-family: 'Indie Flower';
+}
+.home .img-section {
+  width: 100%;
+  border-bottom: 2px dashed silver;
+  padding-bottom: 14px;
+}
+.home .img-section h1 {
+  margin-top: 20px;
 }
 .home .content-section {
   margin: 30px 0;
